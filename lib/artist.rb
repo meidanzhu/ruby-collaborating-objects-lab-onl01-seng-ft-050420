@@ -31,10 +31,6 @@ class Artist
     end
   end
 
-  def self.find(artist_name) #helper method
-    self.all.find {|artist| artist.name == artist_name}
-  end
-
   def print_songs
     self.songs.each {|song| puts song.name}
   end
